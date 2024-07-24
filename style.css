@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.a1 {
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    background-color: rgb(38, 38, 59);
+    list-style-type: none;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul a li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+nav ul a li:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+hr {
+    /* display: inline; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0.2, 0.2), rgb(61, 40, 61)), url(photo/1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+.banner-text {
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+
+}
+
+.banner-text h1 {
+    font-size: 130px;
+    font-family: "Merienda", cursive;
+
+
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
+    font-family: "Merienda", cursive;
+}
+
+.banner-btn {
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 0.5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.banner-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: black;
+}
