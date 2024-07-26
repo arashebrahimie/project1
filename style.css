@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* nav */
+
 .a1 {
     position: fixed;
     /* top: 0; */
@@ -39,6 +41,8 @@ nav ul li a {
     text-decoration: none;
     color: aliceblue;
 }
+
+/* banner */
 
 #banner {
     background: linear-gradient(rgba(0, 0, 0.2, 0.2), rgb(61, 40, 61)), url(photo/1.jpg);
@@ -111,6 +115,7 @@ nav ul li a {
 }
 
 /* featiores */
+
 #feature {
     width: 100%;
     padding: 70px 0;
@@ -157,4 +162,50 @@ nav ul li a {
 
 .feature-box>div {
     margin: 40px;
+}
+
+.feature-box div h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.feature-box div p {
+    text-align: justify;
+}
+
+.feature-box div img {
+    width: 550px;
+    height: 390px;
+    border-radius: 10px;
+}
+
+/* services */
+#services {
+    width: 100%;
+    padding: 70px 0;
+    background-color: rgb(221, 221, 221);
+}
+
+.service-box {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.single-service img {
+    width: 550px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.service-box div {
+    margin-bottom: 20px;
 }
