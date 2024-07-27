@@ -162,6 +162,7 @@ nav ul li a {
 
 .feature-box>div {
     margin: 40px;
+    transition: 0.5s;
 }
 
 .feature-box div h1 {
@@ -178,6 +179,11 @@ nav ul li a {
     height: 390px;
     border-radius: 10px;
 }
+
+div.feature-img:hover {
+    transform: scale(1.05, 1.05);
+}
+
 
 /* services */
 #services {
@@ -201,6 +207,8 @@ nav ul li a {
     position: relative;
 }
 
+
+
 .single-service img {
     width: 550px;
     height: 300px;
@@ -219,7 +227,7 @@ div.overlay {
     border-radius: 7px;
     top: 0;
     cursor: pointer;
-    margin-left: 12.5px;
+    margin-left: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(61, 40, 61));
     opacity: 0;
     transition: 1s;
@@ -253,4 +261,54 @@ div.overlay {
     border: 0;
     margin: 15px auto;
     width: 60%;
+}
+
+/* testimonial */
+
+#testimonial {
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+.tesimonial-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px rgb(134, 133, 133);
+    transition: 0.5s;
+
+}
+
+.testimonial-col p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+
+.testimonial-col:hover {
+    transform: scale(1.1, 1.1);
 }
