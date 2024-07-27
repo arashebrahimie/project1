@@ -198,6 +198,7 @@ nav ul li a {
     flex-basis: 48%;
     text-align: center;
     border-radius: 7px;
+    position: relative;
 }
 
 .single-service img {
@@ -206,6 +207,50 @@ nav ul li a {
     border-radius: 7px;
 }
 
-.service-box div {
+.service-box div.single-service {
     margin-bottom: 20px;
+}
+
+
+div.overlay {
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    border-radius: 7px;
+    top: 0;
+    cursor: pointer;
+    margin-left: 12.5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(61, 40, 61));
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-service:hover .overlay {
+    opacity: 1;
+}
+
+.service-desk {
+    width: 90%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: justify;
+    text-align: center;
+    color: aliceblue;
+    opacity: 0;
+    transition: 1S;
+}
+
+.single-service:hover .service-desk {
+    bottom: 20%;
+    opacity: 1;
+}
+
+.single-service hr {
+    background-color: aliceblue;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
 }
